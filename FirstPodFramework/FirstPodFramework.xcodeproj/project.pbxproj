@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		E718608424EA61A800018548 /* FirstPodFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E718608224EA61A800018548 /* FirstPodFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E718608C24EA67EC00018548 /* FirstPodController.h in Headers */ = {isa = PBXBuildFile; fileRef = E718608A24EA67EC00018548 /* FirstPodController.h */; };
+		E718608D24EA67EC00018548 /* FirstPodController.m in Sources */ = {isa = PBXBuildFile; fileRef = E718608B24EA67EC00018548 /* FirstPodController.m */; };
+		E718608F24EA681000018548 /* FirstPodProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E718608E24EA681000018548 /* FirstPodProtocol.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E718607F24EA61A800018548 /* FirstPodFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FirstPodFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E718608224EA61A800018548 /* FirstPodFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstPodFramework.h; sourceTree = "<group>"; };
 		E718608324EA61A800018548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E718608A24EA67EC00018548 /* FirstPodController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstPodController.h; sourceTree = "<group>"; };
+		E718608B24EA67EC00018548 /* FirstPodController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstPodController.m; sourceTree = "<group>"; };
+		E718608E24EA681000018548 /* FirstPodProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstPodProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +54,9 @@
 			children = (
 				E718608224EA61A800018548 /* FirstPodFramework.h */,
 				E718608324EA61A800018548 /* Info.plist */,
+				E718608A24EA67EC00018548 /* FirstPodController.h */,
+				E718608B24EA67EC00018548 /* FirstPodController.m */,
+				E718608E24EA681000018548 /* FirstPodProtocol.h */,
 			);
 			path = FirstPodFramework;
 			sourceTree = "<group>";
@@ -59,7 +68,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E718608F24EA681000018548 /* FirstPodProtocol.h in Headers */,
 				E718608424EA61A800018548 /* FirstPodFramework.h in Headers */,
+				E718608C24EA67EC00018548 /* FirstPodController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E718608D24EA67EC00018548 /* FirstPodController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
