@@ -16,4 +16,5 @@ FOUNDATION_EXPORT const unsigned char FirstPodFrameworkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <FirstPodFramework/PublicHeader.h>
 
-
+//对外公开接口、曝光所有的实现的接口
+#import "FirstPodController.h"
