@@ -66,7 +66,7 @@
     }
     //从后往前看
     for(NSInteger i=self.length-1;i>=0;){
-        NSInteger from=i-words.length;
+        NSInteger from=i-words.length+1;
         if(from<0){
             return -1;
         }
@@ -137,4 +137,36 @@
     return s;
 }
 
+//转大写
+-(NSString*)toUpperCase{
+    return [self uppercaseString];
+}
+
+//转小写
+-(NSString*)toLowerCase{
+    return [self lowercaseString];
+}
+
+//移除两端的空格
+- (NSString *)trim{
+    NSString* blank=@" ";
+    NSString* s=self;
+    while(true){
+        NSInteger at=[s indexOf:blank];
+        if(at==0){
+            s=[s substring:1];
+        }else{
+            at=[s lastIndexOf:blank];
+            if(at==-1){
+                break;
+            }
+            if(at==s.length-1){
+                s=[s substring:0 to:at];
+            }else{
+                break;
+            }
+        }
+    }
+    return s;
+}
 @end

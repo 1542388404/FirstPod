@@ -33,6 +33,12 @@ NS_ASSUME_NONNULL_BEGIN
 -(NSString*)replace:(NSString*) from target:(NSString*) to;
 //替换 所有,将所有的from替换为to，且from支持正则
 -(NSString*)replaceAll:(NSString*)from target:(NSString*)to;
+//转大写
+-(NSString*)toUpperCase;
+//转小写
+-(NSString*)toLowerCase;
+//移除两端的空格
+-(NSString*)trim;
 
 @end
 

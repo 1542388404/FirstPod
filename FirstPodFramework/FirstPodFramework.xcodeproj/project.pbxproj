@@ -37,6 +37,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E7098E8524EE48E000A2F5BF /* NSString+Method */ = {
+			isa = PBXGroup;
+			children = (
+				E7846C4124EB618400DAC0BD /* NSString+Method.h */,
+				E7846C4224EB618400DAC0BD /* NSString+Method.m */,
+			);
+			path = "NSString+Method";
+			sourceTree = "<group>";
+		};
 		E718607524EA61A800018548 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +65,12 @@
 		E718608124EA61A800018548 /* FirstPodFramework */ = {
 			isa = PBXGroup;
 			children = (
+				E7098E8524EE48E000A2F5BF /* NSString+Method */,
 				E718608224EA61A800018548 /* FirstPodFramework.h */,
 				E718608324EA61A800018548 /* Info.plist */,
 				E718608A24EA67EC00018548 /* FirstPodController.h */,
 				E718608B24EA67EC00018548 /* FirstPodController.m */,
 				E718608E24EA681000018548 /* FirstPodProtocol.h */,
-				E7846C4124EB618400DAC0BD /* NSString+Method.h */,
-				E7846C4224EB618400DAC0BD /* NSString+Method.m */,
 			);
 			path = FirstPodFramework;
 			sourceTree = "<group>";
