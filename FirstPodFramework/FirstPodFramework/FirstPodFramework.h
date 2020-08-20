@@ -18,3 +18,6 @@ FOUNDATION_EXPORT const unsigned char FirstPodFrameworkVersionString[];
 
 //对外公开接口、曝光所有的实现的接口
 #import "FirstPodController.h"
+//NSString category
+#import "NSString+Method.h"
+
