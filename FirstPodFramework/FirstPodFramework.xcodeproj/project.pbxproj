@@ -13,6 +13,9 @@
 		E718608F24EA681000018548 /* FirstPodProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E718608E24EA681000018548 /* FirstPodProtocol.h */; };
 		E7846C4324EB618400DAC0BD /* NSString+Method.h in Headers */ = {isa = PBXBuildFile; fileRef = E7846C4124EB618400DAC0BD /* NSString+Method.h */; };
 		E7846C4424EB618400DAC0BD /* NSString+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = E7846C4224EB618400DAC0BD /* NSString+Method.m */; };
+		E7D92C6024EF5BEB008E8FA1 /* UIView+Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D92C5E24EF5BEB008E8FA1 /* UIView+Toast.h */; };
+		E7D92C6124EF5BEB008E8FA1 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D92C5F24EF5BEB008E8FA1 /* UIView+Toast.m */; };
+		E7D92C6524EF6A1D008E8FA1 /* ILoadingProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D92C6424EF6A1D008E8FA1 /* ILoadingProtocol.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		E718608E24EA681000018548 /* FirstPodProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstPodProtocol.h; sourceTree = "<group>"; };
 		E7846C4124EB618400DAC0BD /* NSString+Method.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Method.h"; sourceTree = "<group>"; };
 		E7846C4224EB618400DAC0BD /* NSString+Method.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Method.m"; sourceTree = "<group>"; };
+		E7D92C5E24EF5BEB008E8FA1 /* UIView+Toast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		E7D92C5F24EF5BEB008E8FA1 /* UIView+Toast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		E7D92C6424EF6A1D008E8FA1 /* ILoadingProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILoadingProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 		E718608124EA61A800018548 /* FirstPodFramework */ = {
 			isa = PBXGroup;
 			children = (
+				E7D92C5D24EF5BA5008E8FA1 /* UIView+Toast */,
 				E7098E8524EE48E000A2F5BF /* NSString+Method */,
 				E718608224EA61A800018548 /* FirstPodFramework.h */,
 				E718608324EA61A800018548 /* Info.plist */,
@@ -75,6 +82,16 @@
 			path = FirstPodFramework;
 			sourceTree = "<group>";
 		};
+		E7D92C5D24EF5BA5008E8FA1 /* UIView+Toast */ = {
+			isa = PBXGroup;
+			children = (
+				E7D92C6424EF6A1D008E8FA1 /* ILoadingProtocol.h */,
+				E7D92C5E24EF5BEB008E8FA1 /* UIView+Toast.h */,
+				E7D92C5F24EF5BEB008E8FA1 /* UIView+Toast.m */,
+			);
+			path = "UIView+Toast";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -83,8 +100,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E718608F24EA681000018548 /* FirstPodProtocol.h in Headers */,
+				E7D92C6524EF6A1D008E8FA1 /* ILoadingProtocol.h in Headers */,
 				E718608424EA61A800018548 /* FirstPodFramework.h in Headers */,
 				E718608C24EA67EC00018548 /* FirstPodController.h in Headers */,
+				E7D92C6024EF5BEB008E8FA1 /* UIView+Toast.h in Headers */,
 				E7846C4324EB618400DAC0BD /* NSString+Method.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7D92C6124EF5BEB008E8FA1 /* UIView+Toast.m in Sources */,
 				E7846C4424EB618400DAC0BD /* NSString+Method.m in Sources */,
 				E718608D24EA67EC00018548 /* FirstPodController.m in Sources */,
 			);

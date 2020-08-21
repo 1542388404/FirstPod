@@ -20,4 +20,6 @@ FOUNDATION_EXPORT const unsigned char FirstPodFrameworkVersionString[];
 #import "FirstPodController.h"
 //NSString category
 #import "NSString+Method.h"
+//UIView  toast
+#import "UIView+Toast.h"
 
