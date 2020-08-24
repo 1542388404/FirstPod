@@ -22,4 +22,7 @@ FOUNDATION_EXPORT const unsigned char FirstPodFrameworkVersionString[];
 #import "NSString+Method.h"
 //UIView  toast
 #import "UIView+Toast.h"
-
+//Persisit cache
+#import "PersistCacheHelper.h"
+//NSFileManager sand dir
+#import "NSFileManager+sandDir.h"

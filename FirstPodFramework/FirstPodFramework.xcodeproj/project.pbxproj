@@ -16,6 +16,11 @@
 		E7D92C6024EF5BEB008E8FA1 /* UIView+Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D92C5E24EF5BEB008E8FA1 /* UIView+Toast.h */; };
 		E7D92C6124EF5BEB008E8FA1 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D92C5F24EF5BEB008E8FA1 /* UIView+Toast.m */; };
 		E7D92C6524EF6A1D008E8FA1 /* ILoadingProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D92C6424EF6A1D008E8FA1 /* ILoadingProtocol.h */; };
+		E7D92C6B24EFAEAC008E8FA1 /* IPersistCacheProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D92C6A24EFAEAC008E8FA1 /* IPersistCacheProtocol.h */; };
+		E7D92C6E24EFAF07008E8FA1 /* PersistCacheHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D92C6C24EFAF07008E8FA1 /* PersistCacheHelper.h */; };
+		E7D92C6F24EFAF07008E8FA1 /* PersistCacheHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D92C6D24EFAF07008E8FA1 /* PersistCacheHelper.m */; };
+		E7D92C7C24EFCA91008E8FA1 /* NSFileManager+sandDir.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D92C7A24EFCA90008E8FA1 /* NSFileManager+sandDir.m */; };
+		E7D92C7D24EFCA91008E8FA1 /* NSFileManager+sandDir.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D92C7B24EFCA91008E8FA1 /* NSFileManager+sandDir.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,12 @@
 		E7D92C5E24EF5BEB008E8FA1 /* UIView+Toast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
 		E7D92C5F24EF5BEB008E8FA1 /* UIView+Toast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		E7D92C6424EF6A1D008E8FA1 /* ILoadingProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILoadingProtocol.h; sourceTree = "<group>"; };
+		E7D92C6724EF9B0F008E8FA1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E7D92C6A24EFAEAC008E8FA1 /* IPersistCacheProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPersistCacheProtocol.h; sourceTree = "<group>"; };
+		E7D92C6C24EFAF07008E8FA1 /* PersistCacheHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersistCacheHelper.h; sourceTree = "<group>"; };
+		E7D92C6D24EFAF07008E8FA1 /* PersistCacheHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersistCacheHelper.m; sourceTree = "<group>"; };
+		E7D92C7A24EFCA90008E8FA1 /* NSFileManager+sandDir.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+sandDir.m"; sourceTree = "<group>"; };
+		E7D92C7B24EFCA91008E8FA1 /* NSFileManager+sandDir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+sandDir.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +68,7 @@
 			children = (
 				E718608124EA61A800018548 /* FirstPodFramework */,
 				E718608024EA61A800018548 /* Products */,
+				E7D92C6624EF9B0F008E8FA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,13 +83,15 @@
 		E718608124EA61A800018548 /* FirstPodFramework */ = {
 			isa = PBXGroup;
 			children = (
-				E7D92C5D24EF5BA5008E8FA1 /* UIView+Toast */,
-				E7098E8524EE48E000A2F5BF /* NSString+Method */,
-				E718608224EA61A800018548 /* FirstPodFramework.h */,
-				E718608324EA61A800018548 /* Info.plist */,
 				E718608A24EA67EC00018548 /* FirstPodController.h */,
 				E718608B24EA67EC00018548 /* FirstPodController.m */,
+				E718608224EA61A800018548 /* FirstPodFramework.h */,
 				E718608E24EA681000018548 /* FirstPodProtocol.h */,
+				E718608324EA61A800018548 /* Info.plist */,
+				E7D92C7924EFCA90008E8FA1 /* NSFileManager+sandDir */,
+				E7098E8524EE48E000A2F5BF /* NSString+Method */,
+				E7D92C6924EFAE44008E8FA1 /* PersistCache */,
+				E7D92C5D24EF5BA5008E8FA1 /* UIView+Toast */,
 			);
 			path = FirstPodFramework;
 			sourceTree = "<group>";
@@ -92,6 +106,33 @@
 			path = "UIView+Toast";
 			sourceTree = "<group>";
 		};
+		E7D92C6624EF9B0F008E8FA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7D92C6724EF9B0F008E8FA1 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7D92C6924EFAE44008E8FA1 /* PersistCache */ = {
+			isa = PBXGroup;
+			children = (
+				E7D92C6A24EFAEAC008E8FA1 /* IPersistCacheProtocol.h */,
+				E7D92C6C24EFAF07008E8FA1 /* PersistCacheHelper.h */,
+				E7D92C6D24EFAF07008E8FA1 /* PersistCacheHelper.m */,
+			);
+			path = PersistCache;
+			sourceTree = "<group>";
+		};
+		E7D92C7924EFCA90008E8FA1 /* NSFileManager+sandDir */ = {
+			isa = PBXGroup;
+			children = (
+				E7D92C7A24EFCA90008E8FA1 /* NSFileManager+sandDir.m */,
+				E7D92C7B24EFCA91008E8FA1 /* NSFileManager+sandDir.h */,
+			);
+			path = "NSFileManager+sandDir";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -101,10 +142,13 @@
 			files = (
 				E718608F24EA681000018548 /* FirstPodProtocol.h in Headers */,
 				E7D92C6524EF6A1D008E8FA1 /* ILoadingProtocol.h in Headers */,
+				E7D92C6E24EFAF07008E8FA1 /* PersistCacheHelper.h in Headers */,
 				E718608424EA61A800018548 /* FirstPodFramework.h in Headers */,
+				E7D92C6B24EFAEAC008E8FA1 /* IPersistCacheProtocol.h in Headers */,
 				E718608C24EA67EC00018548 /* FirstPodController.h in Headers */,
 				E7D92C6024EF5BEB008E8FA1 /* UIView+Toast.h in Headers */,
 				E7846C4324EB618400DAC0BD /* NSString+Method.h in Headers */,
+				E7D92C7D24EFCA91008E8FA1 /* NSFileManager+sandDir.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,9 +220,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7D92C7C24EFCA91008E8FA1 /* NSFileManager+sandDir.m in Sources */,
 				E7D92C6124EF5BEB008E8FA1 /* UIView+Toast.m in Sources */,
 				E7846C4424EB618400DAC0BD /* NSString+Method.m in Sources */,
 				E718608D24EA67EC00018548 /* FirstPodController.m in Sources */,
+				E7D92C6F24EFAF07008E8FA1 /* PersistCacheHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -291,7 +337,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -319,7 +365,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zah.FirstPodFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -341,7 +388,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zah.FirstPodFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

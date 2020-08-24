@@ -74,7 +74,13 @@
         UIView* v=[[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
         UIView* container=[UIView new];
         
-        UIActivityIndicatorView* spinner=[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleLarge];
+        UIActivityIndicatorView* spinner=nil;
+        if(@available(iOS 13.0,*)){
+              spinner=[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+        }else{
+              spinner=[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+        }
+      
         UILabel* text=[UILabel new];
         [text setText:message];
         [text setFont:[UIFont systemFontOfSize:18]];
